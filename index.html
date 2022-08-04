@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StarWars Wiki</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="mains.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <img class="logo" src="/logo.png" alt="logo vermelho redondo" />
+        <h1>StarWars Wiki</h1>
+      </div>
+      <div class="search-bar">
+        <input
+          id="search-input"
+          class="search-input"
+          placeholder="Pesquise por filme ou personagem"
+        />
+        <button class="search-button" onClick="onSearch()"></button>
+      </div>
+      <div class="films-list" id="films-list"></div>
+      <div class="modal" id="modal" onclick="hideModal()">
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </div>
+  </body>
+</html>
